@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 300px;
+    height: 500px;
+    color: white;
+    background-color: tomato;
+    border-radius: 10px;
+    padding: 20px;
+}
+div{
+    margin-top: 30px;
+}
+.desc{
+    margin-top: 100px;
+}
+.link{
+    margin-top: 150px;
+}
+.link-item{
+    text-decoration: none;
+    color: white;
+    border:1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}

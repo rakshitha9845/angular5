@@ -1,0 +1,44 @@
+<h1>Hello</h1>
+<div class="box">
+<app-nav-bar></app-nav-bar>
+<app-nav-bar></app-nav-bar>
+<app-nav-bar></app-nav-bar>
+</div>
+<br>
+<h3>button event</h3>
+<button (click)="getName()">click me</button>
+<br>
+<h3>key up event</h3>
+<input type="text" name="" id="" (keyup)="keyUp('event running')">
+<br>
+<h3>key down event</h3>
+<input type="text" name="" id=""  (keydown)="keyDown('event running')">
+<br>
+<h3>key press event</h3>
+<input type="text" name="" id=""  (keypress)="keyPress('event running')">
+<br>
+<br>
+<input type="text" value={{name}} disabled={{diabledBox}}>
+<input type="text" [value]="name" [disabled]="diabledBox">
+<button (click)="enableInput()">Enable Me</button>
+<br>
+<br>
+<input type="text" [placeholder]="pholder">
+<button (click)="changeholder()">click Me</button>
+<br>
+<h1 *ngIf="day else elseBlock">Hello</h1>
+<ng-template #elseBlock>
+    <h1>Bye</h1>
+</ng-template>
+<br>
+<h1 *ngIf="greet=='hello' then thenBlock else elseBlock"></h1>
+<ng-template #thenBlock>hi</ng-template>
+<ng-template #elseBlock>hello</ng-template>
+<br>
+<h4 *ngFor="let name of names1">
+        {{name}}
+</h4>
+<h4 *ngFor="let name of names">
+    {{name.fname}}
+    {{name.age}}
+</h4>
